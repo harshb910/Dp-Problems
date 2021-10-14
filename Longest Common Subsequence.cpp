@@ -17,3 +17,8 @@ int longestCommonSubsequence(string a, string b) {
         }
         return t[m][n];
     }
+
+
+//Input: text1 = "abcde", text2 = "ace" 
+//Output: 3  
+//Explanation: The longest common subsequence is "ace" and its length is 3.
