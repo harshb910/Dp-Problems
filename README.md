@@ -2,3 +2,5 @@
 1) [Longest Common Subsequence] (https://leetcode.com/problems/longest-common-subsequence/)
 
 2) [Coin Change-I] (https://leetcode.com/problems/coin-change/)
+
+3) [Target Sum] (https://leetcode.com/problems/target-sum/)
