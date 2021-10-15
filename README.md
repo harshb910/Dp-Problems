@@ -8,3 +8,5 @@
 4) [Longest Common Substring] (https://www.geeksforgeeks.org/longest-common-substring-dp-29/)
 
 5) [Print Longest Common Subsequence] ()
+
+6) [Shortest Common Supersequence] (https://www.geeksforgeeks.org/shortest-common-supersequence/)
