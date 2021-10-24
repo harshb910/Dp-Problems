@@ -12,3 +12,5 @@
 6) [Shortest Common Supersequence] (https://www.geeksforgeeks.org/shortest-common-supersequence/)
 
 7) [Palindrome Partitioning II] (https://www.interviewbit.com/old/problems/palindrome-partitioning-ii/)
+
+8) [Evaluate Expression to True] (https://www.interviewbit.com/old/problems/evaluate-expression-to-true/)
