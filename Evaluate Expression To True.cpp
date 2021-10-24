@@ -41,20 +41,28 @@ int solve(string str, int i, int j, int istrue)
         {
             int leftT,leftF,rightT,rightF;
             
-            if(dp[i][k-1][1]==-1)
-            leftT=solve(str,i,k-1,1);
+            if(dp[i][k-1][1]==-1){
+                leftT=solve(str,i,k-1,1);
+                dp[i][k-1][1] = leftT;
+            }
             else leftT=dp[i][k-1][1];
             
-            if(dp[i][k-1][0]==-1)
-            leftF=solve(str,i,k-1,0);
+            if(dp[i][k-1][0]==-1){
+                leftF=solve(str,i,k-1,0);
+                dp[i][k-1][0]=leftF;
+            }
             else leftF=dp[i][k-1][0];
             
-            if(dp[k+1][j][1]==-1)
-            rightT=solve(str,k+1,j,1);
+            if(dp[k+1][j][1]==-1){
+                rightT=solve(str,k+1,j,1);
+                dp[k+1][j][1]=rightT;
+            }
             else rightT=dp[k+1][j][1];
             
-            if(dp[k+1][j][0]==-1)
-            rightF=solve(str,k+1,j,0);
+            if(dp[k+1][j][0]==-1){
+                rightF=solve(str,k+1,j,0);
+                dp[k+1][j][0]=rightF;
+            }
             else rightF=dp[k+1][j][0];
             
             if(str[k]=='^')
@@ -75,7 +83,7 @@ int solve(string str, int i, int j, int istrue)
                 ans+=(leftT*rightF) + (leftF*rightT) + (leftT*rightT);
                 else ans+=(leftF*rightF) ;
             }
-            
+            // dp[i][j][istrue]=ans%1003;
         }
         return dp[i][j][istrue]=ans%1003;
     }
