@@ -75,9 +75,9 @@ int solve(string str, int i, int j, int istrue)
                 ans+=(leftT*rightF) + (leftF*rightT) + (leftT*rightT);
                 else ans+=(leftF*rightF) ;
             }
-            dp[i][j][istrue]=ans%1003;
+            
         }
-        return ans%1003;
+        return dp[i][j][istrue]=ans%1003;
     }
 int Solution::cnttrue(string A) {
     memset(dp,-1,sizeof(dp));
